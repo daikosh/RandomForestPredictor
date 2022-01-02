@@ -193,12 +193,8 @@ class RandomForestPredictor(object):
                 plt.ylabel(target)
                 st.pyplot(fig)
 
-            st.sidebar.header("2. データの前処理")
             st.subheader("2. データの前処理")
-
-            
             st.sidebar.header("3. 学習 (フィッティング)")
-            st.subheader("3. 学習 (フィッティング)")
             # 説明変数と目的変数の設定
             x = df_uploaded.drop(target,axis=1)
             y = df_uploaded[target]
